@@ -13,7 +13,7 @@ body{
 }
 
 
-/* Media query para evitar que el contenido principal se coloque debajo del navbar */
+/* Media query para evitar que el contenido principal se coloque debajo del navbar en modo fixed-top (mobile) */
 @media (max-width: 1300px){
     body::before{
         display: block;
@@ -24,7 +24,6 @@ body{
 
 /* query para solo utilizar el navbar-fixed en versiones mobile */
 @media (max-width: 1280px) {
-    
     .navbar {
         position: fixed;
         z-index: 1030; 
