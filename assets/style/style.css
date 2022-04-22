@@ -1,0 +1,39 @@
+@font-face {
+    font-family: RobotoLight;
+    src: url(/assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+
+body{
+    font-family: RobotoLight;
+}
+
+
+/* Media query para evitar que el contenido principal se coloque debajo del navbar */
+@media (max-width: 1300px){
+    body::before{
+        display: block;
+        content: '';
+        height: 60px;
+    }
+}
+
+/* query para solo utilizar el navbar-fixed en versiones mobile */
+@media (max-width: 1280px) {
+    
+    .navbar {
+        position: fixed;
+        z-index: 1030; 
+        right: 0;
+        left: 0;   
+        border-radius: 0;
+        top: 0;
+        border-width: 0 0 1px;
+    }      
+}
+
+
+
